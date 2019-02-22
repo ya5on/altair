@@ -176,6 +176,8 @@ gulp.task('production', ['libs', 'img'], () => {
         }))
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(sourcemaps.write('../maps'))
+        .pipe(sourcemaps.write('dist/maps/'))
         .pipe(gulp.dest(path.dist.js));
+    gulp.src(path.src.fonts)
+        .pipe(gulp.dest('dist/fonts/'));
 });
