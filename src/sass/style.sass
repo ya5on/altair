@@ -1,0 +1,454 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+
++reset()
+
+.container
+  +wrapper
+
+body
+  font-family: Montserrat, sans-serif
+
+//creative block
+.creative
+  background: linear-gradient(to bottom, #fff, #81776f)
+  overflow: hidden
+
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 25px
+
+nav
+  font-size: 15px
+  text-transform: uppercase
+  font-weight: bold
+
+  ul
+    display: flex
+    align-items: center
+  li
+    margin-left: 15px
+  a
+    color: #81776f
+    transition: .4s
+
+    &:hover
+        color: #000
+
+.fa-envelope
+  font-size: 25px
+
+.active
+  color: #000
+
+.title
+  +row-flex
+  justify-content: center
+  text-align: center
+  text-transform: uppercase
+  margin-top: 55px
+  font-family: 'kenyan', sans-serif
+  color: #3f3b48
+  font-size: 40px
+  align-items: flex-end
+
+  .text-1
+    +size(3)
+    +size-md(12)
+
+    p
+      text-align: right
+      +md(text-align, center)
+
+  .text-2
+    +size(4)
+    +size-md(12)
+    h1
+      color: #ff0000
+      font-size: 120px
+      line-height: .9
+
+  .text-3
+    +size(3)
+    +size-md(12)
+
+    p
+      text-align: left
+      +md(text-align, center)
+
+.creative-img
+  margin-top: 75px
+  img
+    display: block
+    margin: auto
+//creative block end
+
+//our work
+.our-work
+  background-color: #3F3B48
+  overflow: hidden
+
+.content-title
+  +row-flex
+  justify-content: center
+  text-align: center
+  text-transform: uppercase
+  margin-top: 55px
+  margin-bottom: 50px
+  font-family: 'kenyan', sans-serif
+  font-size: 35px
+  align-items: flex-end
+  color: #fff
+
+  .box-1
+    text-align: right
+    p
+      padding-right: 5px
+
+
+  h2
+    font-size: 100px
+    line-height: .9
+
+
+.content
+  +row-flex
+  justify-content: center
+  color: #fff
+
+  &-box-title
+    color: #FFFFFF
+    font-size: 26px
+    text-align: left
+    text-transform: uppercase
+    font-weight: bold
+    margin: 30px 0
+
+  &-box-left
+    +size(4)
+    +size-md(12)
+
+    p
+      font-size: 15px
+      text-align: left
+      color: #FFFFFF
+      
+    .list
+      color: #fff
+      font-size: 18px
+      text-transform: uppercase
+      font-weight: bold
+      margin-top: 30px
+
+      i.fa
+        width: 30px
+        height: 30px
+        line-height: 30px
+
+  &-box-center
+    +size(3)
+    +size-md(12)
+
+    img
+      display: block
+      margin: 0 auto
+  &-box-right
+    +size(4)
+    +size-md(12)
+
+    .content-box-title
+      text-align: center
+
+    .tech
+      ul
+        display: flex
+        justify-content: center
+
+      li
+        width: 80px
+        height: 100px
+        font-size: 40px
+        background-color: #635f6d
+        display: flex
+        justify-content: center
+        align-items: center
+
+      &-first
+        border-radius: 10px 0 0 10px
+
+      &-second
+        margin: 0 2px
+
+      &-third
+        border-radius: 0 10px 10px 0
+
+.pagination img
+    display: block
+    margin: 35px auto 45px
+
+//our work end
+
+//about
+.about
+  img
+    width: 100%
+
+.about-title
+  font-family: 'kenyan', sans-serif
+  font-size: 104px
+  text-align: center
+  text-transform: uppercase
+  font-weight: bold
+  color: #FF0000
+  margin-top: 55px
+  margin-bottom: 50px
+  display: flex
+  justify-content: center
+  height: 104px
+
+  span
+    color: #3f3b48
+    font-size: 82px
+    border-bottom: 10px solid #3f3b48
+    padding: 0 3px
+    margin-top: 5px
+
+.about-work
+  +row-flex
+  justify-content: center
+
+.about-box
+  +size(4)
+  +size-sm(12)
+  margin-top: 20px
+  padding: 10px
+
+  &-title
+    color: #000
+    font-size: 26px
+    font-weight: 500
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+
+    h4
+      padding-left: 5px
+
+  p
+    font-size: 18px
+    text-align: justify
+
+.btn
+  background-color: #FF0000
+  border: none
+  border-radius: 10px
+  outline: none
+  padding: 15px 30px
+  font-size: 16px
+  font-family: Montserrat, sans-serif
+  color: #fff
+  text-transform: uppercase
+  font-weight: bold
+  cursor: pointer
+  display: block
+  margin: 50px auto 0
+//about end
+
+//blog
+.blog
+  background-color: #3f3b48
+  overflow: hidden
+
+.blog-title
+  +row-flex
+  justify-content: center
+  text-align: center
+  text-transform: uppercase
+  margin-top: 55px
+  margin-bottom: 50px
+  font-family: 'kenyan', sans-serif
+  font-size: 35px
+  align-items: flex-end
+  color: #fff
+
+  .blog-box-1
+    text-align: right
+    p
+      padding-right: 5px
+
+  .blog-box-3
+    text-align: left
+    p
+      padding-left: 5px
+
+  h2
+    font-size: 100px
+    line-height: .9
+
+//blog slider
+
+#track
+  width: 300px
+  position: relative
+  display: block
+  margin: 0 auto 50px
+
+#view
+  position: relative
+  height: 470px
+  margin: 0 auto 30px
+  overflow: hidden
+  max-width: 3000px
+
+#items
+  display: flex
+  margin: 0 0 0 -800px
+  padding: 10px 0 0
+  position: absolute
+  list-style: none none
+
+  li
+    margin: 0 50px
+    width: 340px
+    height: 445px
+    text-align: center
+    box-shadow: 0 0 20px #161414
+    background-color: #595466
+
+.items-foto
+  width: 300px
+  height: 255px
+  background: #3F3B48
+  margin: 20px auto
+  position: relative
+
+.items-text
+  padding: 10px 20px
+  text-align: left
+
+  h5
+    font-size: 13px
+    color: #fff
+    font-weight: bold
+
+  p
+    font-size: 18px
+    color: #fff
+    font-weight: bold
+    padding: 15px 0
+
+.items-btn
+  background: #3f3b48
+  padding: 5px 10px
+  outline: none
+  font-size: 10px
+  color: #fff
+  font-weight: bold
+  border: 1px solid #000
+  border-radius: 5px
+  cursor: pointer
+  text-transform: uppercase
+
+.data
+  position: absolute
+  bottom: -22px
+  right: -3px
+  width: 75px
+  height: 80px
+  background: #fff
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+
+  .num
+    height: 70%
+    align-content: center
+    font-size: 35px
+    font-weight: bold
+    line-height: 55px
+
+  .month
+    height: 30%
+    border-radius: 0 0 5px 5px
+    background: #000
+    align-items: flex-end
+    color: #fff
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: bold
+    line-height: 25px
+
+//facts
+.facts
+  background: #fff
+
+  h3
+    font-size: 20px
+    color: #3f3b48
+    font-weight: 800
+    text-transform: uppercase
+    margin: 40px 0 30px
+
+.facts-title
+  font-family: 'kenyan', sans-serif
+  font-size: 104px
+  text-align: center
+  text-transform: uppercase
+  font-weight: bold
+  color: #FF0000
+  margin-top: 55px
+  margin-bottom: 50px
+  display: flex
+  justify-content: center
+  height: 104px
+
+  span
+    color: #3f3b48
+    font-size: 82px
+    border-bottom: 10px solid #3f3b48
+    padding: 0 3px
+    margin-top: 5px
+
+
+
+.facts-content
+  background: linear-gradient(to bottom, #ECECEC, #fff)
+  width: 370px
+  +row-flex
+  border-radius: 15px 15px 0 0
+  border-top: 1px solid #3f3b48
+
+.facts-pic
+  display: inline-block
+  width: calc(100%/3)
+  margin: 0 -2px
+  padding: 20px
+  box-sizing: border-box
+  cursor: pointer
+  transition: .4s
+
+  img
+    display: block
+    margin: 15px auto 0
+
+.facts-img
+  display: block
+  margin: -70px auto 50px
+//facts end
+
+footer
+  background-color: #3F3B48
+  height: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.footer-text
+  color: #fff
+  font-weight: bold
+
+
